@@ -29,6 +29,7 @@ class HomeTableViewController: UITableViewController {
         self.tableView.refreshControl = myRefreshControl
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 150
+       
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -119,7 +120,6 @@ class HomeTableViewController: UITableViewController {
         
         cell.userNameLabel.text = user["name"] as? String
         cell.tweetContent.text = tweetArray[indexPath.row]["text"] as? String
-        
         
         //set the image
         cell.profileImageView.layer.borderWidth = 1.0
