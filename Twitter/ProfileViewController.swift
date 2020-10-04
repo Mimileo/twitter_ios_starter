@@ -33,7 +33,7 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
         let user_id = UserDefaults.standard.string(forKey: "user_id")
         print(user_id!)
-        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(loadUserData), userInfo: nil, repeats: true)
+        //Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(loadUserData), userInfo: nil, repeats: true)
         //loadUserData(user_id!)
         
         loadHeaderImage(user_id ?? "Nothing")
